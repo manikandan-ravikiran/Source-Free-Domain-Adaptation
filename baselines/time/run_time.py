@@ -167,6 +167,7 @@ def write_anafora(output_dir, dataset, predictions, tokenizer, config):
         os.makedirs(doc_path, exist_ok=True)
         doc_path = os.path.join(doc_path,
                                 "%s.TimeNorm.system.completed.xml" % doc_name)
+        print(doc_path)
         data.to_file(doc_path)
 
 
